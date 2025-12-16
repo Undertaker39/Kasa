@@ -1,0 +1,41 @@
+.liste-container p{
+    padding: 20px;
+}
+
+.liste-container ul{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 143%;
+}
+
+.liste-container summary{
+    padding:0 20px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    height: 50px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 143%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.down{
+    display: none;
+}
+
+details[open] .up{
+    display:none;
+}
+
+details[open] .down{
+    display:initial;
+}
+
+.liste{
+    padding: 20px;
+}

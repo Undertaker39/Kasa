@@ -1,0 +1,28 @@
+.error-title{
+    padding: 100px 0;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 288px;
+    text-align: center;
+    color: #FF6060;
+}
+
+.error-text{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    color: #FF6060;
+}
+
+.error-link{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: black;
+    padding: 100px 0 80px 0;
+}
