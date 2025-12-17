@@ -1,11 +1,11 @@
 import './Style.css'
 
-function Tags () {
+function Tagcontainer () {
     return(
         <p>
-            prout
+            tages
         </p>
     )
 }
 
-export default Tags
+export default Tagcontainer

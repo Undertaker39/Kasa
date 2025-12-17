@@ -1,0 +1,9 @@
+.listes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listes section{
+    width: 50%;
+}

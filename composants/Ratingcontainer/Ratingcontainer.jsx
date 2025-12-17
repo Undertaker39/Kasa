@@ -3,9 +3,9 @@ import './Style.css'
 
 function Ratingcontainer () {
     return(
-        <p>
+        <div>
             <Rating />
-        </p>
+        </div>
     )
 }
 

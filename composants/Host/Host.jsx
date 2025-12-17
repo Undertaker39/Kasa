@@ -1,11 +1,11 @@
 import './Style.css'
 
-function Rating () {
+function Host(){
     return(
         <p>
-            etoile
+            host
         </p>
     )
 }
 
-export default Rating
+export default Host
