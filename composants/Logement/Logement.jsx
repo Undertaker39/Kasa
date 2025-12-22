@@ -9,14 +9,16 @@ import logement from '../../assets/logement.json'
 let Identifiant = "c67ab8a7"
 
 function Logement () {
-/*    
+/*  
 console.log(Identifiant)
     const ID = logement.map(logements =>
         logements.id === Identifiant
     )
+    logement.filter(logement.id === ID)
+    
     console.log(ID)
     return(
-        ID.map(({title, pictures,description,host,rating,location,equipments,tags})=> (
+        logement.filter(({title, pictures,description,host,rating,location,equipments,tags})=> (
             <section className='logement' key={Identifiant}>
                 <p>{title}</p>
                 <p>{pictures}</p>
@@ -29,6 +31,7 @@ console.log(Identifiant)
             </section>
         ))
     )
+
 */
 return(
     <div>
@@ -65,6 +68,6 @@ return(
 )
 
 
-}
 
+}
 export default Logement

@@ -7,7 +7,7 @@ const img = "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/fr
 
 function Carrousel(){
     console.log(img.length)
-    if (img.length === 109) {
+    if (img.length === 0) {
         return(
             <div className='carrousel'>
                 <img className='carrousel-img' src={img}></img>
