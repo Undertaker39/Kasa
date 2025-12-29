@@ -1,13 +1,34 @@
 import './Style.css'
 import logo from '../../assets/Logo.svg'
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <header>
             <img className='header-img' src={logo}></img>
             <nav className='header-nav'>
-                <a href='*'>Acceuil</a>
-                <a href='*'>A Propos</a>
+                <NavLink
+                    to=""
+                    style={({ isActive })=> isActive
+                        ? {
+                            textDecoration: 'underline solid',
+                        }
+                        :{ textDecoration: 'none'}
+                    }
+                >
+                    Accueil
+                </NavLink>    
+                <NavLink
+                    to="About"
+                    style={({ isActive })=> isActive
+                        ? {
+                            textDecoration: 'underline solid',
+                        }
+                        :{ textDecoration: 'none'}
+                    }
+                >
+                    A Propos
+                </NavLink>
             </nav>
         </header>
     );

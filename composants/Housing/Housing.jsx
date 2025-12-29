@@ -6,9 +6,9 @@ import ListeContainer from '../Listecontainer/Listecontainer'
 import HostContainer from '../Hostcontainer/Hostcontainer'
 import './Style.css'
 import logement from '../../assets/logement.json'
-let Identifiant = "c67ab8a7"
+let Identifiant = "c67ab8a"
 
-function Logement () {
+function Housing () {
 /*  
 console.log(Identifiant)
     const ID = logement.map(logements =>
@@ -70,4 +70,4 @@ return(
 
 
 }
-export default Logement
+export default Housing

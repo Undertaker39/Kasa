@@ -1,9 +1,9 @@
-import Banner from '../composants/Banner/Banner'
-import About from '../composants/About/About'
+import Banner from '../../composants/Banner/Banner'
+import About from '../../composants/About/About'
 
 function Apropos(){
     return(
-        <div>
+        <div className='about-main'>
             <Banner
             e="about"
             />
