@@ -4,7 +4,7 @@ import './Style.css'
 
 function Article ({id, title, cover}) {
     return (
-        <Link to={'/'+id}>
+        <Link to={'/home/'+id}>
             <article id={id} className='logements'>
                 <img className='logements-img' src={cover} alt={`${title}`}></img>
                 <p className='logements-title'>{title}</p>

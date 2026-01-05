@@ -1,9 +1,9 @@
 import './Style.css'
 
-function Titre () {
+function Titre ({titre}) {
     return(
-        <p>
-            prout
+        <p className='title'>
+            {titre}
         </p>
     )
 }

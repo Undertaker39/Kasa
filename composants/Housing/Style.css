@@ -1,7 +1,14 @@
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .listes{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: -25px;
 }
 
 .listes section{

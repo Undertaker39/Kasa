@@ -1,73 +1,65 @@
 import Carrouselcontainer from '../Carrouselcontainer/Carrouselcontainer'
 import Titrecontainer from '../Titrecontainer/Titrecontainer'
+import Locationcontainer from '../Locationcontainer/Locationcontainer'
 import Tagcontainer from '../Tagscontainer/Tagscontainer'
 import Ratingcontainer from '../Ratingcontainer/Ratingcontainer'
 import ListeContainer from '../Listecontainer/Listecontainer'
 import HostContainer from '../Hostcontainer/Hostcontainer'
+import Error from '../Error/Error'
 import './Style.css'
 import logement from '../../assets/logement.json'
-let Identifiant = "c67ab8a"
+import { useParams } from 'react-router-dom'
+
 
 function Housing () {
-/*  
-console.log(Identifiant)
-    const ID = logement.map(logements =>
-        logements.id === Identifiant
-    )
-    logement.filter(logement.id === ID)
-    
-    console.log(ID)
-    return(
-        logement.filter(({title, pictures,description,host,rating,location,equipments,tags})=> (
-            <section className='logement' key={Identifiant}>
-                <p>{title}</p>
-                <p>{pictures}</p>
-                <p>{description}</p>
-                <p>{host}</p>
-                <p>{rating}</p>
-                <p>{location}</p>
-                <p>{equipments}</p>
-                <p>{tags}</p>
-            </section>
-        ))
-    )
-
-*/
-return(
-    <div>
-        <Carrouselcontainer/>
-        <div>
-        <Titrecontainer />
-        <HostContainer />
-        </div>
-        <div>
-            <Tagcontainer />
-            <Ratingcontainer />
-        </div>
-        <div className='listes'>
-            <ListeContainer
-                key='descritpion'
-                title='descritpion'
-                content="0"
-            />
-            <ListeContainer
-                key='equipement' 
-                title='equipement' 
-                content="1"
-             />
-        </div>
-    
-    
-    
-    
-    
-    </div>
-
-
-
-)
-
-
-
+    const params = useParams()
+    const logementFinded = logement.find(({id}) => id === params.id)
+    if (logementFinded === undefined){
+        return(
+            <Error />
+        )
+    }else{
+        return(
+            <div className="housing-main">
+                <Carrouselcontainer
+                    content={logementFinded.pictures}
+                />
+                <section className='info'>
+                    <div className='title-tags'>
+                        <Titrecontainer
+                            content={logementFinded.title}
+                        />
+                        <Locationcontainer
+                            content={logementFinded.location}
+                        />
+                        <Tagcontainer
+                            content={logementFinded.tags}
+                            />
+                    </div>
+                    <div className='host-rating'>
+                        <HostContainer
+                            content={logementFinded.host}
+                        />
+                        <Ratingcontainer
+                            content={logementFinded.rating}
+                        />
+                    </div>
+                </section>
+                <div className='listes'>
+                    <ListeContainer
+                        title='descritpion'
+                        content={logementFinded.description}
+                    />
+                    <ListeContainer
+                        title='equipement' 
+                        content={logementFinded.equipments}
+                    />
+                </div>
+            </div> 
+        )
+    }
 }
 export default Housing
+
+
+

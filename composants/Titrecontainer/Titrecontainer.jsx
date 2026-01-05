@@ -1,10 +1,11 @@
+import Titre from '../Titre/Titre'
 import './Style.css'
 
-function Titrecontainer () {
+function Titrecontainer ({content}) {
     return(
-        <p>
-            titre
-        </p>
+        <Titre
+        titre={content}
+        />
     )
 }
 

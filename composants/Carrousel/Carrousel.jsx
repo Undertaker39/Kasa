@@ -2,26 +2,47 @@ import './Style.css'
 import left_arrow from '../../assets/Left-arrow.svg'
 import right_arrow from '../../assets/Right-arrow.svg'
 
-const img = "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-3.jpg"
+function Carrousel(images){
+    const img = images.images
+    let position = 0
+    function Add(e,a){
+        e += 1
+        console.log(e)
+        if(e <= a){
+            e
+            console.log(e)
+        }else{
+            e = 0
+            console.log(e)
+        }
+    }
+    
+    function Back(e,a){
+        e -= 1
+        console.log(e)
+        if(e >= 0){
+            e 
+            console.log(e)
+        }else{
+            e = a
+            console.log(e)
+        }
+    }
 
-
-function Carrousel(){
-    console.log(img.length)
-    if (img.length === 0) {
+    if (img.length >1) {
         return(
             <div className='carrousel'>
-                <img className='carrousel-img' src={img}></img>
+                <img className='carrousel-img' src={img[position]}></img>
+                <img className='left' src={left_arrow} onClick={()=>Back(position,img.length)}></img>
+                <img className='right' src={right_arrow} onClick={()=>Add(position,img.length)}></img>
+                <p className='compte'>{position+1}/{img.length+1}</p>
             </div>
         )
     }else{
         return(
             <div className='carrousel'>
                 <img className='carrousel-img' src={img}></img>
-                <img className='left' src={left_arrow}></img>
-                <img className='right' src={right_arrow}></img>
-                <p className='compte'>image/totale image</p>
             </div>
-
         )
     }   
 }

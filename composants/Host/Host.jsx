@@ -1,10 +1,13 @@
 import './Style.css'
 
-function Host(){
+function Host(host){
+    const Host = host.host
     return(
-        <p>
-            host
-        </p>
+        <div className='host'>
+            <p className='name-host'>{Host.name}</p>
+            <img className='img-host' src={Host.picture} alt={Host.name}></img>
+        </div>
+
     )
 }
 

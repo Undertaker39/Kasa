@@ -16,11 +16,8 @@ createRoot(document.getElementById('root')).render(
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/home" element={<Housing_main />} />
+                <Route path="/home/:id" element={<Housing_main />} />
                 <Route path="*" element={<Error />} />
-                /* if routepath=/id 'id===idexistant'
-                then do path to Housing_main
-                else do About*/
             </Routes>
             <Footer />
         </Router>

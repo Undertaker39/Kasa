@@ -1,11 +1,10 @@
 import Rating from '../Rating/Rating'
 import './Style.css'
 
-function Ratingcontainer () {
+function Ratingcontainer ({content}) {
     return(
-        <div>
-            <Rating />
-        </div>
+        <Rating
+        rate={content} />
     )
 }
 

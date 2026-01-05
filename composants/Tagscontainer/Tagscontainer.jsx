@@ -1,10 +1,11 @@
 import './Style.css'
+import Tags from '../Tags/Tags'
 
-function Tagcontainer () {
+function Tagcontainer ({content}) {
     return(
-        <p>
-            tages
-        </p>
+        <Tags
+        tags={content}
+        />
     )
 }
 

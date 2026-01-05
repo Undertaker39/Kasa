@@ -1,11 +1,11 @@
 import Host from '../Host/Host'
 import './Style.css'
 
-function HostContainer(){
+function HostContainer({content}){
     return(
-        <div>
-            <Host />
-        </div>
+        <Host
+        host={content}
+        />
     )
 }
 

@@ -1,10 +1,12 @@
 import Carrousel from '../Carrousel/Carrousel'
 import './Style.css'
 
-function Carrouselcontainer(){
+function Carrouselcontainer({content}){
     return(
         <section className='carrouselcontainer'>
-            <Carrousel />
+            <Carrousel
+            images={content}
+            />
         </section>
     )
 }
