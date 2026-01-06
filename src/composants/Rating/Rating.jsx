@@ -11,18 +11,19 @@ function Rating ({rate}) {
 }
 
 function stars (e){
-    for (let i=1 ; i<5 ; i++){
-        console.log(e) 
+    let test = [];
+    for (let i=1 ; i<=5 ; i++){
         if (i<=e) {
-            return(
-                <img className='star' src={redstar}></img>
+            (
+                test.push(<img key={i} className='star' src={redstar}></img>)
             )
         }else{
-            return(
-                <img className='star' src={star}></img>
+            (
+                test.push(<img key={i}  className='star' src={star}></img>)
             ) 
         }
     }
+    return test;
 }
 
 
