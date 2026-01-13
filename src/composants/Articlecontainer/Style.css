@@ -7,3 +7,16 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+/*responsive*/
+
+@media (max-width:768px){
+	.article-container{
+    background-color: white;
+    padding:0;
+  }
+  .article-container a{
+    width: 100%;
+    padding:0 0 20px 0 ;
+  }
+}

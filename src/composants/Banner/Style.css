@@ -48,3 +48,28 @@
     object-fit: cover;
     mix-blend-mode: darken;
 }
+
+/*responsive*/
+
+@media (max-width:768px){
+    .banner, .banner-about{
+        height: 111px;
+        border-radius:10px ;
+    }
+
+    .banner-img , .banner-about-img{
+        border-radius: 10px;
+    }
+
+    .banner-msg-container{
+        width: 220px;
+        height: 48px;
+        align-items: center;
+        position: absolute;
+        left: 130px;
+    }
+
+	.banner-msg{
+        font-size: 24px;
+    }
+}

@@ -3,3 +3,11 @@
     justify-content: center;
     height: 415px;
 }
+/*responsive*/
+
+@media (max-width:768px){
+    .carrouselcontainer{
+        height: 255px;
+    }
+    
+}

@@ -40,3 +40,20 @@ details[open] .down{
 .liste{
     padding: 20px;
 }
+
+/*responsive*/
+
+@media (max-width:768px){
+    .liste-container{
+        margin: 25px 0;
+    }
+
+	.liste-container summary{
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .liste-container ul{
+        font-size: 12px;
+    }
+}

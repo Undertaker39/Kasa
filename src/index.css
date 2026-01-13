@@ -18,7 +18,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -41,6 +40,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* HTML5 display-role reset for older browsers */
 
 
 header , section {
@@ -50,4 +50,17 @@ header , section {
 
 header , section , footer {
   margin-top: 45px;
+}
+
+/*responsive*/
+
+@media (max-width:768px){
+	header , section {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+
+	header , section , footer {
+  		margin-top: 25px;
+	}
 }

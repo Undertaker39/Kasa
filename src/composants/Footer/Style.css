@@ -23,3 +23,15 @@ footer{
     text-align: center;
     vertical-align: bottom;
 }
+
+/*responsive*/
+
+@media (max-width:768px){
+    footer{
+        margin-top: 0;
+    }
+	.footer-txt{
+        width: 100px;
+        font-size: 12px;
+    }
+}

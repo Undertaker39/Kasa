@@ -42,3 +42,27 @@
     text-align: center;
     color: white;
 }
+
+/*responsive*/
+
+@media (max-width:768px){
+    .carrousel {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .carrousel-img{
+        border-radius: 10px;
+    }
+
+    .left,.right{
+        height: 20px;
+    }
+
+    .compte{
+        display: none;
+    }
+
+
+
+}

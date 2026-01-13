@@ -23,3 +23,23 @@
     width: 64px;
     border-radius: 100%;
 }
+
+/*responsive*/
+
+@media (max-width:768px){
+    .host{
+        justify-content: end;
+        width: 135.5px;
+        height: 33px;
+    }
+
+    .name-host{
+        font-size: 12px;
+    }
+
+    .img-host{
+        height: 32px;
+        width: 32px;
+    }
+
+}

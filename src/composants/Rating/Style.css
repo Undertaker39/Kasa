@@ -10,3 +10,18 @@
     width: 24.7px;
     height: 24px;
 }
+
+/*responsive*/
+
+@media (max-width:768px){
+    .stars{
+        width: 98px;
+        height: 18px;
+    }
+
+    .star{
+        width: 13.4px;
+        height: 13px;
+
+    }
+}

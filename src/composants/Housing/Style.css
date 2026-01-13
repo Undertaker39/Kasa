@@ -14,3 +14,31 @@
 .listes section{
     width: 50%;
 }
+
+/*responsive*/
+
+@media (max-width:768px){
+    .info{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .listes{
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    .listes section{
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .host-rating{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
